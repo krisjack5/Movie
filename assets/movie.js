@@ -38,18 +38,19 @@ $("#mash").html("<img src= netflix2.jpg>")
 $(".foodbutton").on("click", function() {
   $("#back").css("background-color","#b00304");
   $("#first-input").val("")
-    $("#last-input").val("")
-   $("#roll").html("submit")
-   $('.container').css("background-image",'');
+  $("#last-input").val("")
+  $("#roll").html("submit")
+  $('.container').css("background-image",'');
   $("#mash").html("<img src= netflix2.jpg>") 
   $("#changeImg").css("background-color","black");
   $("#foodbox").empty();
-    $("#moviebox").empty();
+  $("#moviebox").empty();
+  
   foodStorage={};
   var qsearch = $(this).val().trim();
   //console.log(url);
   var apiKey = "f5a87ab9891de9962393334b9dd0bada&from=0&to=100";
-var apiID = "43e328ce"
+  var apiID = "43e328ce"
             //var qsearch;
             var url = "https://api.edamam.com/search?q=" 
             + qsearch
